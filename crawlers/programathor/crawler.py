@@ -3,7 +3,9 @@ from bs4 import BeautifulSoup as BS
 from helpers import headers, url
 
 
-class Crawler: 
+class Crawler:
+    def __init__(self):
+        self.url_jobs = Crawler.get_jobs_urls()
 
     @staticmethod
     def get_jobs_urls():
